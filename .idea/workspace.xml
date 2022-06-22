@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82c73eea-84db-4fdd-a5e0-0d1a31568dfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/locales/en/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/homeBg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/Default.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/Default.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="82c73eea-84db-4fdd-a5e0-0d1a31568dfd" name="Changes" comment="Initialize project and boilerplate">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +46,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655893658763</updated>
-      <workItem from="1655893660724" duration="8713000" />
+      <workItem from="1655893660724" duration="8945000" />
     </task>
+    <task id="LOCAL-00001" summary="Initialize project and boilerplate">
+      <created>1655903010472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655903010472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize project and boilerplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize project and boilerplate" />
   </component>
 </project>
