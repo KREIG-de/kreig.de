@@ -1,0 +1,59 @@
+@use "~@fontsource/roboto-flex/scss/mixins" as RobotoFlex;
+@import "./globals";
+
+@include RobotoFlex.fontFaceVariable($type: "full");
+
+* {
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+}
+
+:root {
+  @include setVariables;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: $fontFamily;
+  font-variation-settings: $fontVariationDefault;
+  font-size: 1.1rem;
+}
+
+body {
+  background-color: var(--color-contrast);
+  color: var(--color-default);
+}
+
+.layoutBox {
+  @include layoutBox;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: underline dotted transparent;
+  transition: text-decoration .25s;
+  @include respectReduceMotion;
+
+  &:hover, &:focus {
+    text-decoration: underline dotted currentColor;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1, h2 {
+  @include fontVariationImpact;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}

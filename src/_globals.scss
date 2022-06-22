@@ -1,0 +1,71 @@
+$fontFamily: "Roboto FlexVariable", "Roboto Flex", "RobotoVariable", "Roboto", sans-serif;
+
+$fontVariationDefault: "opsz" 48, "slnt" 0, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+$fontVariationEmphasis: "opsz" 17, "slnt" -10, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+$fontVariationImpact: "opsz" 48, "slnt" 0, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 570, "YTUC" 712;
+$fontVariationImpactWeight: 843;
+$fontVariationImpactStretch: 42%;
+
+
+@mixin setVariables {
+  --color-accent: #F3622D;
+  --color-secondary: #5933E3;
+  --color-default: #FFF;
+  --color-contrast: #0B1A16; // Maybe #1C1A23 instead?
+
+  --layout-padding: 20px;
+  --layout-padding-thick: 40px;
+  --layout-padding-thin: 10px;
+  --layout-width: 1400px;
+  --layout-border-radius: 10px;
+  --layout-navigation-spacer: 85px;
+
+  @media(prefers-color-scheme: light) {
+    --color-contrast: #F6F2FF;
+    --color-default: #0C0C0C;
+  }
+}
+
+@mixin fontVariationImpact {
+  font-variation-settings: $fontVariationImpact;
+  font-weight: $fontVariationImpactWeight;
+  font-stretch: $fontVariationImpactStretch;
+}
+
+@mixin inputGeneric {
+  font: inherit;
+  color: inherit;
+  background-color: rgba(255, 255, 255, .1);
+  border: thin solid rgba(255, 255, 255, .2);
+  padding: var(--layout-padding-thin) var(--layout-padding);
+  border-radius: var(--layout-border-radius);
+
+  transition: background-color .25s;
+  @include respectReduceMotion;
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, .15);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+@mixin inputButton {
+  @include inputGeneric;
+}
+
+@mixin layoutBox {
+  margin: auto;
+  width: 100%;
+  max-width: var(--layout-width);
+  padding: var(--layout-padding) var(--layout-padding-thick);
+}
+
+@mixin respectReduceMotion {
+  @media(prefers-reduced-motion: reduce) {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+}

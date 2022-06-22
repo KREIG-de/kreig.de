@@ -1,0 +1,57 @@
+@import "../../globals";
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+
+  background-color: var(--color-contrast);
+  color: var(--color-default);
+  overflow: auto;
+
+  transition: background-color .25s;
+  @include respectReduceMotion;
+
+  &.transparent {
+    background-color: transparent;
+  }
+
+  > nav {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: var(--layout-width);
+
+    > .spacer {
+      flex-grow: 1;
+    }
+
+    > a {
+      padding: var(--layout-padding);
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:first-child {
+        padding-left: var(--layout-padding-thick)
+      }
+      &:last-child {
+        padding-right: var(--layout-padding-thick)
+      }
+
+      &.logo {
+        font-size: 1.5em;
+        @include fontVariationImpact;
+      }
+
+      .btn {
+        @include inputButton;
+      }
+    }
+  }
+}
