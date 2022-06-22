@@ -1,0 +1,30 @@
+{
+  "layout": {
+    "navigation": {
+      "members": "Mitglieder",
+      "login": "Login"
+    },
+    "footer": {
+      "modules": "Module",
+      "home": "Startseite",
+      "members": "Mitglieder",
+      "social": "Soziales",
+      "discord": "Discord",
+      "twitch": "Twitch",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "functions": "Funktionen",
+      "switch_language": "Sprache wechseln",
+      "imprint": "Impressum",
+      "data_protection": "Datenschutz",
+      "disclaimer": "Disclaimer"
+    }
+  },
+  "home": {
+    "title": "Home"
+  },
+  "404": {
+    "title": "Seite nicht gefunden",
+    "text": "Whoops, wir konnten die Seite nach der du suchst nicht finden... Versuch vielleicht zurück zur <HomepageLink>Startseite</HomepageLink> zu gehen."
+  }
+}
