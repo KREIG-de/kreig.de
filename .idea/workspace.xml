@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82c73eea-84db-4fdd-a5e0-0d1a31568dfd" name="Changes" comment="Remove package-lock.json">
+    <list default="true" id="82c73eea-84db-4fdd-a5e0-0d1a31568dfd" name="Changes" comment="Update Node version">
       <change beforePath="$PROJECT_DIR$/.nvmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655893658763</updated>
-      <workItem from="1655893660724" duration="9344000" />
+      <workItem from="1655893660724" duration="9392000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project and boilerplate">
       <created>1655903010472</created>
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655903470447</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Node version">
+      <created>1655903518400</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655903518400</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +113,7 @@
     <MESSAGE value="Add German translation" />
     <MESSAGE value="Lock Node version" />
     <MESSAGE value="Remove package-lock.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove package-lock.json" />
+    <MESSAGE value="Update Node version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Node version" />
   </component>
 </project>
