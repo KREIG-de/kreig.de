@@ -42,6 +42,12 @@ const config: GatsbyConfig = {
                 },
                 pages: []
             }
+        },
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+                headers: {},
+            }
         }
     ]
 };

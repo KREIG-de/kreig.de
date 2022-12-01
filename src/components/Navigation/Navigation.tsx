@@ -42,13 +42,13 @@ const Navigation = ({transparencyMode}: Props) => {
     return <div className={styles.topBar + (transparencyMode ==="transparentWhenAtTop" && atTop ? " "+styles.transparent : "")}>
         <nav>
             <Link to={"/"} className={styles.logo}>KREIG.de</Link>
-            <Link to={"/members"}><Trans i18nKey={"layout.navigation.members"} /></Link>
+            {/*<Link to={"/members"}><Trans i18nKey={"layout.navigation.members"} /></Link>*/}
             <div className={styles.spacer} />
-            <Link to={"/login"}>
+            {/*<Link to={"/login"}>
                 <div className={styles.btn}>
                     <Trans i18nKey={"layout.navigation.login"} />
                 </div>
-            </Link>
+            </Link>*/}
         </nav>
     </div>
 }

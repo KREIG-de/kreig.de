@@ -17,14 +17,26 @@
       "switch_language": "Sprache wechseln",
       "imprint": "Impressum",
       "data_protection": "Datenschutz",
-      "disclaimer": "Disclaimer"
+      "disclaimer": "Disclaimer",
+      "languages": "Sprachen"
     }
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "slogan": "<1>KREIG</1><br/>ist was du brauchst",
+    "about": {
+      "title": "Was geht?",
+      "text1": "Wir sind KREIG, ein Gamingclan aus Norddeutschland. Wir zocken Arma, Rainbow Six: Siege und alles was sonst so aufkommt.",
+      "subtitle": "Warum ist die Website so leer?",
+      "text2": "Hauptsächlich weil ich noch nicht alles fertig hab, sorry. :p -- Kevin"
+    }
   },
   "404": {
     "title": "Seite nicht gefunden",
     "text": "Whoops, wir konnten die Seite nach der du suchst nicht finden... Versuch vielleicht zurück zur <HomepageLink>Startseite</HomepageLink> zu gehen."
+  },
+  "lng": {
+    "en": "English",
+    "de": "Deutsch"
   }
 }

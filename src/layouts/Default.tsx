@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../components/Navigation/Navigation";
-import {Helmet, Link, Trans} from "gatsby-plugin-react-i18next";
+import {Helmet, Link, Trans, useI18next, useTranslation} from "gatsby-plugin-react-i18next";
 
 // @ts-ignore
 import * as styles from "./Default.module.scss";
@@ -13,6 +13,8 @@ type Props = {
 }
 
 const Layout = ({children, wrap, navTransparencyMode, noNavigationSpacer}: React.PropsWithChildren<Props>) => {
+  const {languages, originalPath} = useI18next();
+  const {t} = useTranslation();
   return <div className={styles.layout + (noNavigationSpacer ? " "+styles.noNavSpacer : "")}>
     <Helmet>
       <title>KREIG.de</title>
@@ -25,9 +27,13 @@ const Layout = ({children, wrap, navTransparencyMode, noNavigationSpacer}: React
     <footer>
       <div className={styles.footerLinks}>
         <div className={styles.footerBlock}>
-          <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.modules"} /></span>
-          <Link to={"/"}><Trans i18nKey={"layout.footer.home"} /></Link>
-          <Link to={"/members"}><Trans i18nKey={"layout.footer.members"} /></Link>
+          <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.languages"} /></span>
+          {languages.map((lng) => (
+              <Link to={originalPath} language={lng} key={lng}>
+                {t("lng."+lng)}
+              </Link>
+          ))}
+          {/*<Link to={"/members"}><Trans i18nKey={"layout.footer.members"} /></Link>*/}
         </div>
         <div className={styles.footerBlock}>
           <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.social"} /></span>
@@ -38,7 +44,6 @@ const Layout = ({children, wrap, navTransparencyMode, noNavigationSpacer}: React
         </div>
         <div className={styles.footerBlock}>
           <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.functions"} /></span>
-          <a href="#"><Trans i18nKey={"layout.footer.switch_language"} /></a>
           <a href="https://kevink.dev/de/legal/about/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.imprint"} /></a>
           <a href="https://unkn0wncat.net/de/legal/datasec/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.data_protection"} /></a>
           <a href="https://unkn0wncat.net/de/legal/disclaimer/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.disclaimer"} /></a>

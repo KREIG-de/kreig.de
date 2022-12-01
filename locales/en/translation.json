@@ -17,14 +17,26 @@
       "switch_language": "Switch Language",
       "imprint": "Imprint",
       "data_protection": "Data Protection",
-      "disclaimer": "Disclaimer"
+      "disclaimer": "Disclaimer",
+      "languages": "Languages"
     }
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "slogan": "<1>KREIG</1><br/>is what you need",
+    "about": {
+      "title": "What's up?",
+      "text1": "We are KREIG, a gaming clan from northern Germany. We play Arma, Rainbow Six: Siege and anything else we want.",
+      "subtitle": "Why is the website so empty?",
+      "text2": "Mainly because I haven't finished everything, sorry. :p  -- Kevin"
+    }
   },
   "404": {
     "title": "Page Not Found",
     "text": "Whoops, we could not find the page you were looking for... Maybe try going <HomepageLink>home</HomepageLink>?"
+  },
+  "lng": {
+    "en": "English",
+    "de": "Deutsch"
   }
 }

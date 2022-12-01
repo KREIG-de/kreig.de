@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../layouts/Default";
 import {graphql} from "gatsby";
-import {Helmet, useTranslation} from "gatsby-plugin-react-i18next";
+import {Helmet, Trans, useTranslation} from "gatsby-plugin-react-i18next";
 
 // @ts-ignore
 import * as styles from "./index.module.scss";
@@ -22,22 +22,23 @@ const IndexPage = () => {
 
               <div className={styles.heroContent}>
                   <span className={styles.heroSlogan}>
-                      <span className={styles.sloganAccent}>KREIG</span><br/>
-                      your text here.
+                      <Trans i18nKey={"home.slogan"} components={{1: <span className={styles.sloganAccent}/>, br: <br/>}}>
+                          <span className={styles.sloganAccent}>KREIG</span>
+                          slogan
+                      </Trans>
                   </span>
               </div>
 
               <div className={styles.heroShadow} />
           </div>
           <div className={"layoutBox"}>
-              <h1>Hello World</h1>
+              <h1>{t("home.about.title")}</h1>
 
-              <p>This is the boilerplate for the new KREIG.de web project.</p>
+              <p>{t("home.about.text1")}</p>
 
-              <h2>Boilerplate Information</h2>
+              <h2>{t("home.about.subtitle")}</h2>
 
-              <p>The KREIG.de boilerplate contains example objects for testing stylesheet compatibility with existing content.</p>
-              <p>With this testing facility it is possible to deliver a perfect experience to users not only on desktop, but also mobile and other <a href={"https://www.steamdeck.com/"}>handheld devices</a>.</p>
+              <p>{t("home.about.text2")}</p>
           </div>
       </Layout>
   )
