@@ -38,11 +38,11 @@ jobs:
           name: kreig-dist
           path: public
       - name: Publish to Cloudflare Pages
-          uses: cloudflare/pages-action@v1
-          with:
-            apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-            accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-            projectName: kreig
-            directory: public
-            # Optional: Enable this if you want to have GitHub Deployments triggered
-            gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: kreig
+          directory: public
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
