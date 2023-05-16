@@ -38,15 +38,15 @@ const Layout = ({children, wrap, navTransparencyMode, noNavigationSpacer}: React
         <div className={styles.footerBlock}>
           <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.social"} /></span>
           <a href="/discord" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.discord"} /></a>
-          <a href="https://www.twitch.tv/KreigTV" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.twitch"} /></a>
-          <a href="https://twitter.com/KreigClan" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.twitter"} /></a>
-          <a href="https://www.youtube.com/channel/UClpiVA0oumf3lG-gIZPnr2w" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.youtube"} /></a>
+          <a href="https://www.twitch.tv/KreigTV" target="_blank" rel="noopener me"><Trans i18nKey={"layout.footer.twitch"} /></a>
+          <a href="https://gametoots.de/@kreig" target="_blank" rel="noopener me"><Trans i18nKey={"layout.footer.mastodon"} /></a>
+          <a href="https://www.youtube.com/channel/UClpiVA0oumf3lG-gIZPnr2w" target="_blank" rel="noopener me"><Trans i18nKey={"layout.footer.youtube"} /></a>
         </div>
         <div className={styles.footerBlock}>
           <span className={styles.footerTitle}><Trans i18nKey={"layout.footer.functions"} /></span>
-          <a href="https://kevink.dev/de/legal/about/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.imprint"} /></a>
-          <a href="https://unkn0wncat.net/de/legal/datasec/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.data_protection"} /></a>
-          <a href="https://unkn0wncat.net/de/legal/disclaimer/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.disclaimer"} /></a>
+          <a href="https://kevink.dev/legal/about/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.imprint"} /></a>
+          <a href="https://kevink.dev/legal/datasec/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.data_protection"} /></a>
+          <a href="https://kevink.dev/legal/disclaimer/" target="_blank" rel="noopener"><Trans i18nKey={"layout.footer.disclaimer"} /></a>
         </div>
       </div>
       <div className={styles.footerCopy}>
